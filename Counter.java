@@ -13,18 +13,14 @@ enum Counter {
     },
     words {
         int apply(String s) {
-            return (s == null || s.isEmpty()|| !Character.isLetter
-
-(s.charAt(0)))? 0 : 1;
+            return (s == null || s.isEmpty()|| !Character.isLetter (s.charAt(0)))? 0 : 1;
         }
     },
     lattes {
         int apply(String s) {
             int i = 0;
             if (s  != null && !s.isEmpty())
-            for (char c : s.trim().toCharArray()) if  
-
-(Character.isLetter(c)) i++;
+            for (char c : s.trim().toCharArray()) if (Character.isLetter(c)) i++;
             return i;
         }
     };
